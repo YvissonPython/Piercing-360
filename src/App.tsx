@@ -345,12 +345,12 @@ export default function App() {
                   <span className="text-[10px] tracking-[0.4em] uppercase text-[#FCF6BA] font-bold">Lote Pioneiro</span>
                 </div>
 
-                <div className="text-[18px] text-white/40 tracking-[0.2em] line-through mb-4 font-bold">R$ 997</div>
+                <div className="text-[18px] text-white/40 tracking-[0.2em] line-through mb-4 font-bold">R$ 2.000</div>
                 <div className="flex justify-center items-start gap-2 mb-6">
                   <span className="text-[24px] text-finch-gradient font-bold mt-2">R$</span>
-                  <span className="font-serif text-[100px] leading-none font-black text-white tracking-tighter drop-shadow-lg">297</span>
+                  <span className="font-serif text-[100px] leading-none font-black text-white tracking-tighter drop-shadow-lg">997</span>
                 </div>
-                <div className="text-[14px] text-[#BF953F] tracking-widest uppercase font-bold mb-14">Ou 12x de R$ 29,70</div>
+                <div className="text-[14px] text-[#BF953F] tracking-widest uppercase font-bold mb-14">Ou 12x de R$ 99,70</div>
 
                 <div className="text-left mb-14">
                   <ul className="space-y-5">
