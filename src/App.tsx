@@ -413,7 +413,7 @@ export default function App() {
       {/* Footer */}
       <FadeUp className="py-12 px-8 bg-black border-t border-white/[0.05] flex flex-col sm:flex-row justify-between items-center text-[10px] uppercase tracking-[0.4em] font-bold text-white/30 gap-6 relative z-10">
         <div>
-          <span className="text-[#BF953F]">Piercing 360°</span> <span className="mx-2">•</span> Elite
+          <span className="text-[#BF953F]">Profissional Piercing 360</span> <span className="mx-2">•</span> Elite
         </div>
         <div className="flex gap-6">
           <a href="#" className="hover:text-white transition-colors">Instagram</a>
