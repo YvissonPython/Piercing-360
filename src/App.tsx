@@ -142,7 +142,7 @@ export default function App() {
       </section>
 
       {/* Strip de Status Metálico */}
-      <div className="border-y border-white/[0.05] py-16 px-6 relative z-10 bg-black/80 backdrop-blur-sm">
+      <FadeUp className="border-y border-white/[0.05] py-16 px-6 relative z-10 bg-black/80 backdrop-blur-sm">
         <div className="max-w-[1000px] mx-auto grid grid-cols-1 sm:grid-cols-3 gap-12 text-center divide-y sm:divide-y-0 sm:divide-x divide-white/[0.05]">
           <div className="pt-6 sm:pt-0">
             <div className="font-serif text-[48px] sm:text-[64px] font-bold text-finch-gradient-light mb-2 leading-none">04</div>
@@ -157,7 +157,7 @@ export default function App() {
             <div className="text-[10px] uppercase tracking-[0.4em] text-[#BF953F] font-semibold">Prático & Aplicável</div>
           </div>
         </div>
-      </div>
+      </FadeUp>
 
       {/* Dor (Dark Aggressive) */}
       <section id="dor" className="py-40 relative z-10 bg-[#020202]">
@@ -215,7 +215,7 @@ export default function App() {
           <div className="mt-16 flex flex-col items-center">
             <p className="text-[16px] text-[#FCF6BA]/80 font-medium tracking-[0.3em] uppercase mb-4">O que você precisa é um método.</p>
             <p className="text-[15px] sm:text-[18px] text-white/50 font-light max-w-[600px] leading-[1.8] text-center">
-              A Mentoria Piercing Profissional 360 é o mecanismo arquitetado para destruir a insegurança e transformar técnica fria em faturamento sólido.
+              A Mentoria Profissional Piercing 360 é o mecanismo arquitetado para destruir a insegurança e transformar técnica fria em faturamento sólido.
             </p>
           </div>
         </FadeUp>
@@ -373,7 +373,7 @@ export default function App() {
                   </ul>
                 </div>
 
-                <FinchButton href="#" className="w-full text-center py-6 text-[15px]">
+                <FinchButton href="https://pay.kiwify.com.br/XVHGHcQ" className="w-full text-center py-6 text-[15px]">
                   Confirmar Inscrição
                 </FinchButton>
                 <div className="mt-6 flex justify-center items-center gap-3 text-[10px] uppercase tracking-[0.3em] text-white/30 font-bold">
@@ -411,7 +411,7 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-8 bg-black border-t border-white/[0.05] flex flex-col sm:flex-row justify-between items-center text-[10px] uppercase tracking-[0.4em] font-bold text-white/30 gap-6 relative z-10">
+      <FadeUp className="py-12 px-8 bg-black border-t border-white/[0.05] flex flex-col sm:flex-row justify-between items-center text-[10px] uppercase tracking-[0.4em] font-bold text-white/30 gap-6 relative z-10">
         <div>
           <span className="text-[#BF953F]">Piercing 360°</span> <span className="mx-2">•</span> Elite
         </div>
@@ -419,7 +419,7 @@ export default function App() {
           <a href="#" className="hover:text-white transition-colors">Instagram</a>
           <a href="#" className="hover:text-white transition-colors">Termos</a>
         </div>
-      </footer>
+      </FadeUp>
 
     </div>
   );
