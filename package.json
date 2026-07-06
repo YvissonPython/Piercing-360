@@ -1,5 +1,5 @@
 {
-  "name": "mentoria-profissional-piercing-360",
+  "name": "growth-mindset",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,23 +11,20 @@
     "lint": "tsc --noEmit"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.14",
-    "@vitejs/plugin-react": "^5.0.4",
-    "dotenv": "^17.2.3",
-    "express": "^4.21.2",
-    "lucide-react": "^0.546.0",
-    "motion": "^12.23.24",
+    "@tailwindcss/vite": "^4.2.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "lucide-react": "^0.477.0",
+    "framer-motion": "^12.4.10",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "vite": "^6.2.0"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@types/express": "^4.17.21",
-    "@types/node": "^22.14.0",
-    "autoprefixer": "^10.4.21",
-    "tailwindcss": "^4.1.14",
-    "tsx": "^4.21.0",
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "autoprefixer": "^10.4.20",
+    "tailwindcss": "^4.0.12",
     "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "vite": "^6.2.1"
   }
 }

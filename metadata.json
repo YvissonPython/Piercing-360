@@ -1,6 +1,8 @@
 {
-  "name": "Mentoria Profissional Piercing 360",
-  "description": "Mentoria Profissional Piercing 360",
+  "name": "Growth Mindset",
+  "description": "Premium landing page for the Growth Mindset mentorship by James.",
   "requestFramePermissions": [],
-  "majorCapabilities": []
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
