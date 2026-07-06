@@ -16,21 +16,21 @@ export const PROFESSIONALS: Professional[] = [
     location: "Minas Gerais",
     quote: "Minha agenda era uma montanha russa. Com o Growth Mindset, aprendi que ser empresária vai além do furo. Hoje tenho previsibilidade e segurança.",
     goal: "Faturamento triplicado em 4 meses.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop"
+    image: "/images/professional-danielle.jpg"
   },
   {
     name: "Aline",
     location: "Santa Catarina",
     quote: "A estratégia de posicionamento mudou o jogo. Parei de atrair quem busca preço e comecei a atrair quem valoriza minha entrega.",
     goal: "Referência absoluta na sua região.",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop"
+    image: "/images/professional-aline.jpg"
   },
   {
     name: "Maisa",
     location: "Recife (Pernambuco)",
     quote: "O James me mostrou que o crescimento é um movimento nacional. A comunidade é o suporte que faltava para eu me sentir imparável.",
     goal: "Estruturação de equipe e escala.",
-    image: "https://images.unsplash.com/photo-1567532939604-b6b5b0ad2f01?q=80&w=600&auto=format&fit=crop"
+    image: "/images/professional-maisa.jpg"
   }
 ];
 

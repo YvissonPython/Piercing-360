@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { SectionTitle } from '../ui/SectionTitle';
 import { PILARES } from '../../constants';
 
@@ -43,8 +43,12 @@ export const Triade = ({ triadeRef, triadeY, triadeRotate }: TriadeProps) => {
                 hidden: { opacity: 0, y: 30 },
                 visible: { opacity: 1, y: 0 }
               }}
+              whileHover={{ 
+                scale: 1.05,
+                y: -10
+              }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="text-center group"
+              className="text-center group cursor-default"
             >
               <div className="w-20 h-20 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-8 border border-white/10 group-hover:border-brand-gold transition-colors duration-500">
                 <pilar.icon className="w-8 h-8 text-brand-gold" />

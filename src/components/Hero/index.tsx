@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { FadeIn } from '../ui/FadeIn';
 
@@ -84,7 +84,7 @@ export const Hero = () => {
             className="relative aspect-[4/5] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl"
           >
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" 
+              src="/images/james-hero.jpg" 
               alt="James - Mentor Growth Mindset" 
               className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700"
             />
@@ -93,9 +93,9 @@ export const Hero = () => {
             {/* Overlay Professionals */}
             <div className="absolute bottom-8 left-8 right-8 flex justify-center gap-4">
               {[
-                "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=100&auto=format&fit=crop",
-                "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=100&auto=format&fit=crop",
-                "https://images.unsplash.com/photo-1567532939604-b6b5b0ad2f01?q=80&w=100&auto=format&fit=crop"
+                "/images/professional-danielle.jpg",
+                "/images/professional-aline.jpg",
+                "/images/professional-maisa.jpg"
               ].map((src, i) => (
                 <div key={i} className="w-12 h-12 rounded-full border-2 border-brand-gold overflow-hidden shadow-xl transform hover:-translate-y-1 transition-transform">
                   <img src={src} className="w-full h-full object-cover" />

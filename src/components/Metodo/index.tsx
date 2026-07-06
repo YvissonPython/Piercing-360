@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { SectionTitle } from '../ui/SectionTitle';
 import { METODO_STEPS } from '../../constants';
 
@@ -43,8 +43,13 @@ export const Metodo = ({ metodoRef, metodoY }: MetodoProps) => {
                 hidden: { opacity: 0, y: 40 },
                 visible: { opacity: 1, y: 0 }
               }}
+              whileHover={{ 
+                scale: 1.05,
+                boxShadow: "0 0 30px rgba(181, 159, 91, 0.15)",
+                borderColor: "rgba(181, 159, 91, 0.3)"
+              }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="glass-card p-10 group hover:-translate-y-2 transition-all duration-500"
+              className="glass-card p-10 group cursor-default transition-all duration-300"
             >
               <div className="flex justify-between items-start mb-8">
                 <div className="w-14 h-14 bg-brand-blue rounded-xl flex items-center justify-center border border-white/10 group-hover:border-brand-gold/50 transition-colors">

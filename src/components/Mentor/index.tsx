@@ -11,7 +11,7 @@ export const Mentor = () => {
           <div className="relative group">
             <div className="absolute -inset-4 bg-brand-gold/10 blur-2xl rounded-[3rem] opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
             <img 
-              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop" 
+              src="/images/james-mentor.jpg" 
               alt="James" 
               className="relative rounded-[2.5rem] w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-700"
             />

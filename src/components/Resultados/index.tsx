@@ -16,8 +16,17 @@ export const Resultados = () => {
         
         <div className="grid md:grid-cols-3 gap-8">
           {PROFESSIONALS.map((prof, i) => (
-            <FadeIn key={i} delay={i * 0.1}>
-              <div className="glass-card group hover:border-brand-gold/40 transition-all duration-500 overflow-hidden flex flex-col h-full">
+            <FadeIn 
+              key={i} 
+              delay={i * 0.1}
+              whileHover={{ 
+                scale: 1.02,
+                boxShadow: "0 0 30px rgba(181, 159, 91, 0.15)",
+                borderColor: "rgba(181, 159, 91, 0.3)"
+              }}
+              className="flex h-full"
+            >
+              <div className="glass-card group transition-all duration-500 overflow-hidden flex flex-col h-full cursor-default">
                 <div className="aspect-[4/3] overflow-hidden relative">
                   <img src={prof.image} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-brand-blue/40"></div>
