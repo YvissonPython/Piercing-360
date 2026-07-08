@@ -13,7 +13,7 @@ export const Navigation = ({ isScrolled, isNavOpen, setIsNavOpen, scrollYProgres
   return (
     <>
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-brand-gold origin-left z-[100]"
+        className="fixed top-0 left-0 right-0 h-[2px] bg-brand-gold origin-left z-[100] shadow-[0_0_10px_rgba(212,175,55,0.5)]"
         style={{ scaleX: scrollYProgress }}
       />
       
@@ -28,7 +28,25 @@ export const Navigation = ({ isScrolled, isNavOpen, setIsNavOpen, scrollYProgres
             <a href="#metodo" className="text-xs uppercase tracking-widest font-bold hover:text-brand-gold transition-colors">O Método</a>
             <a href="#resultados" className="text-xs uppercase tracking-widest font-bold hover:text-brand-gold transition-colors">Resultados</a>
             <a href="#james" className="text-xs uppercase tracking-widest font-bold hover:text-brand-gold transition-colors">O Mentor</a>
-            <a href="#oferta" className="button-primary !py-3 !px-6 text-xs">Acessar Agora</a>
+            <motion.a 
+              href="#oferta" 
+              animate={{ 
+                scale: [1, 1.05, 1],
+                boxShadow: [
+                  "0 0 0 0 rgba(181, 159, 91, 0)",
+                  "0 0 15px 2px rgba(181, 159, 91, 0.3)",
+                  "0 0 0 0 rgba(181, 159, 91, 0)"
+                ]
+              }}
+              transition={{ 
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              className="button-primary !py-3 !px-6 text-xs"
+            >
+              Acessar Agora
+            </motion.a>
           </div>
 
           <button onClick={() => setIsNavOpen(!isNavOpen)} className="md:hidden text-white">
@@ -48,7 +66,26 @@ export const Navigation = ({ isScrolled, isNavOpen, setIsNavOpen, scrollYProgres
             <a onClick={() => setIsNavOpen(false)} href="#metodo" className="text-2xl font-serif">O Método</a>
             <a onClick={() => setIsNavOpen(false)} href="#resultados" className="text-2xl font-serif">Resultados</a>
             <a onClick={() => setIsNavOpen(false)} href="#james" className="text-2xl font-serif">O Mentor</a>
-            <a onClick={() => setIsNavOpen(false)} href="#oferta" className="button-primary text-lg mt-4">Acessar Agora</a>
+            <motion.a 
+              onClick={() => setIsNavOpen(false)} 
+              href="#oferta" 
+              animate={{ 
+                scale: [1, 1.05, 1],
+                boxShadow: [
+                  "0 0 0 0 rgba(181, 159, 91, 0)",
+                  "0 0 15px 2px rgba(181, 159, 91, 0.3)",
+                  "0 0 0 0 rgba(181, 159, 91, 0)"
+                ]
+              }}
+              transition={{ 
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              className="button-primary text-lg mt-4"
+            >
+              Acessar Agora
+            </motion.a>
           </motion.div>
         )}
       </AnimatePresence>

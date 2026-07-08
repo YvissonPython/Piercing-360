@@ -42,8 +42,28 @@ export default function App() {
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    const handleHashClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      const link = target.closest('a');
+      if (link && link.hash && link.origin === window.location.origin) {
+        e.preventDefault();
+        const element = document.querySelector(link.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+          // Update URL hash without jumping
+          window.history.pushState(null, '', link.hash);
+          // Close mobile nav if open
+          setIsNavOpen(false);
+        }
+      }
+    };
+
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    document.addEventListener('click', handleHashClick);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('click', handleHashClick);
+    };
   }, []);
 
   return (

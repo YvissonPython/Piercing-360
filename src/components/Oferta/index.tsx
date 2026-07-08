@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { CheckCircle2, ShieldCheck } from 'lucide-react';
 import { CountdownTimer } from '../ui/CountdownTimer';
+import { FadeIn } from '../ui/FadeIn';
 
 export const Oferta = () => {
   return (
@@ -10,11 +11,17 @@ export const Oferta = () => {
         <div className="absolute top-0 right-0 w-64 h-64 bg-brand-gold/10 blur-[80px] rounded-full"></div>
         
         <div className="relative z-10 text-center mb-16">
-          <span className="inline-block border border-brand-gold/50 text-brand-gold px-6 py-2 rounded-full text-[11px] uppercase tracking-[0.4em] font-bold mb-8">
-            O Convite
-          </span>
-          <h2 className="font-serif text-5xl md:text-6xl font-bold mb-6 italic">A Elite te aguarda</h2>
-          <p className="text-white/50 text-lg font-light">Prepare-se para o próximo nível do seu negócio.</p>
+          <FadeIn>
+            <span className="inline-block border border-brand-gold/50 text-brand-gold px-6 py-2 rounded-full text-[11px] uppercase tracking-[0.4em] font-bold mb-8">
+              O Convite
+            </span>
+          </FadeIn>
+          <FadeIn delay={0.1}>
+            <h2 className="font-serif text-5xl md:text-6xl font-bold mb-6 italic">A Elite te aguarda</h2>
+          </FadeIn>
+          <FadeIn delay={0.2}>
+            <p className="text-white/50 text-lg font-light">Prepare-se para o próximo nível do seu negócio.</p>
+          </FadeIn>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -68,10 +75,26 @@ export const Oferta = () => {
                 <CountdownTimer />
               </div>
               
-              <a href="#" className="button-primary w-full text-center block !py-6 text-sm mb-6 relative overflow-hidden group/btn">
+              <motion.a 
+                href="#" 
+                animate={{ 
+                  scale: [1, 1.02, 1],
+                  boxShadow: [
+                    "0 0 0 0 rgba(181, 159, 91, 0)",
+                    "0 0 20px 2px rgba(181, 159, 91, 0.3)",
+                    "0 0 0 0 rgba(181, 159, 91, 0)"
+                  ]
+                }}
+                transition={{ 
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+                className="button-primary w-full text-center block !py-6 text-sm mb-6 relative overflow-hidden group/btn"
+              >
                 <span className="relative z-10">Entrar para o Growth Mindset</span>
                 <div className="absolute inset-0 bg-brand-gold opacity-0 group-hover/btn:opacity-10 transition-opacity"></div>
-              </a>
+              </motion.a>
               
               <div className="flex items-center justify-center gap-2 text-[10px] text-white/30 uppercase tracking-[0.2em] font-bold">
                 <ShieldCheck className="w-4 h-4" />

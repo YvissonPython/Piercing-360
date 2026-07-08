@@ -30,10 +30,26 @@ export const Hero = () => {
           </FadeIn>
           <FadeIn delay={0.3}>
             <div className="flex flex-col sm:flex-row items-center gap-6">
-              <a href="#oferta" className="button-primary w-full sm:w-auto flex items-center justify-center gap-3 group">
+              <motion.a 
+                href="#oferta" 
+                animate={{ 
+                  scale: [1, 1.02, 1],
+                  boxShadow: [
+                    "0 0 0 0 rgba(181, 159, 91, 0)",
+                    "0 0 20px 2px rgba(181, 159, 91, 0.3)",
+                    "0 0 0 0 rgba(181, 159, 91, 0)"
+                  ]
+                }}
+                transition={{ 
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+                className="button-primary w-full sm:w-auto flex items-center justify-center gap-3 group"
+              >
                 Quero fazer parte do Growth Mindset
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </motion.a>
             </div>
             <motion.div 
               initial="hidden"
@@ -84,7 +100,7 @@ export const Hero = () => {
             className="relative aspect-[4/5] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl"
           >
             <img 
-              src="/images/james-hero.jpg" 
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1024&h=1280&auto=format&fit=crop" 
               alt="James - Mentor Growth Mindset" 
               className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700"
             />
@@ -93,9 +109,9 @@ export const Hero = () => {
             {/* Overlay Professionals */}
             <div className="absolute bottom-8 left-8 right-8 flex justify-center gap-4">
               {[
-                "/images/professional-danielle.jpg",
-                "/images/professional-aline.jpg",
-                "/images/professional-maisa.jpg"
+                "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&h=200&auto=format&fit=crop",
+                "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&h=200&auto=format&fit=crop",
+                "https://images.unsplash.com/photo-1567532939604-b6b5b0ad2f01?q=80&w=200&h=200&auto=format&fit=crop"
               ].map((src, i) => (
                 <div key={i} className="w-12 h-12 rounded-full border-2 border-brand-gold overflow-hidden shadow-xl transform hover:-translate-y-1 transition-transform">
                   <img src={src} className="w-full h-full object-cover" />
